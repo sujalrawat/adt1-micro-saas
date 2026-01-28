@@ -6,7 +6,14 @@ import generateDoc from "./routes/generateDocs.js";
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://adt1-micro-saas.vercel.app",
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+  })
+);
 app.use(express.json());
 
 if(!fs.existsSync("output")){
