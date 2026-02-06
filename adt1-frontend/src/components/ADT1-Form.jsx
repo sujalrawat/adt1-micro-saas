@@ -124,8 +124,8 @@ const ADT1Form = () => {
       {/* DATES */}
       <h3 style={{ marginTop: "30px" }}>DATES</h3>
 
-      <InputField label="Enquiry & Eligibility Date" name="ELIGIBILITY_DATE" value={formData.ELIGIBILITY_DATE} onChange={handleChange} />
-      <InputField label="BR, Intimation & Consent Date" name="CONSENT_DATE" value={formData.CONSENT_DATE} onChange={handleChange} />
+      <InputField label="Enquiry & Eligibility Date" name="DATE" value={formData.DATE} onChange={handleChange} />
+      <InputField label="BR, Intimation & Consent Date" name="DATE" value={formData.DATE} onChange={handleChange} />
       <InputField label="Day" name="DAY" value={formData.DAY} onChange={handleChange} />
 
       {/* SUBMIT */}
